@@ -1,0 +1,14 @@
+URL: https://github.com/SergeyKrichevsky/DI-Bootcamp/blob/main/W1/D1/ExerciseXP/ExerciseXP_w1_d1.py
+suggestions for improvement:
+- In Exercise 3, the code should actually execute the comparison operations and print the boolean results instead of just commenting them out.  The comment regarding an error in "'3' > 3" is also incorrect;  Python will perform this comparison (comparing strings lexicographically) but the result will be false.
+- In Exercise 5, consider using a single f-string for the 'info' variable to make it more concise and readable.
+- Add more descriptive variable names in Exercise 6 (e.g., instead of 'a' and 'b', use 'number1' and 'number2').
+- In Exercise 8, the code assumes case-sensitive comparison.  Add a lower() conversion or provide an option for case-insensitive comparison for a more robust solution.
+- Exercise 3 could benefit from using a more structured approach to display the results (perhaps a formatted table).
+- Add error handling (e.g., `try-except` blocks) in Exercises 7 and 9 to handle potential non-numeric input.
+Brief justification:
+- correctness: The code correctly implements the solutions for most exercises (Exercises 1, 2, 4, 5, 6, 7, 8, and 9). However, Exercise 3 is incomplete as it does not execute the comparisons and print the results.  Instead of printing boolean results, it contains comments.  The string comparison part of Exercise 3 is partially incorrect, as a comment is present for an erroneous assumption.  Overall, the solutions are largely correct but not fully complete for Exercise 3.
+- readability: The code is generally readable, although some variable names (like 'a' and 'b' in Exercise 6) could be more descriptive. The use of f-strings in some exercises improves readability.  Exercise 5 could be improved by using a single f-string for the info message. Overall, it is good, but there is room for improvement. 
+- performance: The code's performance is excellent for these simple tasks. There are no obvious performance bottlenecks.
+- security: There are no significant security concerns in this code.  However, it could benefit from error handling (e.g., for non-numeric input) to enhance robustness.
+

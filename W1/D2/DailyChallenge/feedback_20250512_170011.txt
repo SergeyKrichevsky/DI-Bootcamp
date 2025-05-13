@@ -1,0 +1,12 @@
+URL: https://github.com/SergeyKrichevsky/DI-Bootcamp/blob/main/W1/D2/DailyChallenge/DailyChallenge_w1_d2.py
+suggestions for improvement:
+- In Challenge 1, the code could include input validation to ensure the 'length' is a positive integer.
+- For Challenge 2, adding a docstring to the function would improve readability and explain its purpose.
+- Consider using more descriptive variable names (e.g., instead of 'x', use 'current_multiple').
+- The alternative solution in Challenge 2, while functional, is less readable than the first one.  It's better to prioritize clarity.
+Brief justification:
+- correctness: Both Challenge 1 and Challenge 2 solutions correctly fulfill all requirements specified in the chapter content.  Challenge 1 generates a list of multiples up to the specified length, and Challenge 2 accurately removes consecutive duplicate letters from a string. The code adheres to the instructions of using loops, lists, strings, input(), and conditional statements as specified.
+- readability: The code is generally well-structured and easy to follow.  The use of a while loop for input validation in Challenge 1 enhances readability. However, more descriptive variable names and a docstring for the Challenge 2 function would further improve readability. The commented-out alternative in Challenge 2 is less readable than the preferred solution.
+- performance: The algorithms used in both challenges are efficient.  They have linear time complexity, meaning the execution time grows linearly with the input size.  There are no unnecessary computations or inefficiencies.
+- security: The code does not contain any security vulnerabilities. Input validation is implemented in Challenge 1 to handle potential errors.  There is no interaction with external resources or user-provided data that could introduce security risks.
+
