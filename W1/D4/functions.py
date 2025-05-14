@@ -138,7 +138,7 @@ def calculation(a, b):
     substruction = a-b
     #global global_war_1
     global_war_1 = 50
-    return addition, substruction, global_war_1
+    return addition, substruction, gl
 
 aditional, substraction, global_war_1 = calculation(5, 7)
 print(aditional,  substraction, global_war_1)
