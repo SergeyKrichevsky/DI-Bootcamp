@@ -11,6 +11,19 @@ for index, char in enumerate(user_word):
 
 print(chars_dictionary)
 
+#better way:
+
+user_word = input('Enter a word ')
+chars_dictionary = {}
+
+for index, char in enumerate(user_word):
+    if char in chars_dictionary:
+        chars_dictionary[char].append(index)
+    else:
+        chars_dictionary.update({char : [index]})
+        # chars_dictionary[char] = [index]
+
+print(chars_dictionary)
 
 #CH2
 
