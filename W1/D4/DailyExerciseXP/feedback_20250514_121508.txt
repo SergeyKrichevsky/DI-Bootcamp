@@ -1,0 +1,13 @@
+URL: https://github.com/SergeyKrichevsky/DI-Bootcamp/blob/main/W1/D4/DailyExerciseXP/exercise_w1_d4.py
+suggestions for improvement:
+- In Exercise 3, while both options work, the first (printing directly) aligns better with the instructions that say 'Print a Message'. Returning a string and then printing it adds an unnecessary step.
+- Exercise 4's input validation is good, but the error message could be improved ('Not a valid number' is vague, better to say something like 'Please enter a number between 1 and 100').
+- Exercise 5's `make_shirt` function is mostly correct, but it uses backticks for string formatting instead of f-strings.  This is less readable and modern.
+- Exercise 7's bonus section (month-based seasons) lacks temperature generation.  It only prints messages, not temperatures for the season.  The code asks for the month but doesn't use it to adjust temperatures.
+- In Exercise 7, the `main()` function for the bonus section could be enhanced by adding a loop to allow the user to retry if the input is invalid (i.e., not a number between 1 and 12).
+Brief justification:
+- correctness: Most exercises correctly implement the core functionality described in the chapter.  Minor deviations in Exercise 3 (return vs. print), Exercise 5 (backticks instead of f-strings), Exercise 7 (bonus section lacking temperature generation related to the month) and Exercise 4 (vague error message) reduce the score slightly.
+- readability: The code is generally well-structured and easy to follow.  However, Exercise 5's use of backticks instead of f-strings and minor inconsistencies in variable naming (e.g., `m_names` in Exercise 6) affect readability. The comments could be more descriptive in places, especially clarifying the purpose of different versions or sections.
+- performance: The code is efficient for its tasks.  There are no obvious performance bottlenecks.  The use of f-strings and list comprehensions (where applicable) are efficient. The random number generation is correctly implemented.
+- security: There are no security concerns in this code as it only involves basic input/output operations and does not handle external data or interact with a network.
+
