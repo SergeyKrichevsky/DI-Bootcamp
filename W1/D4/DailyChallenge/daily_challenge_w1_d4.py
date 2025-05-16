@@ -32,7 +32,8 @@ for i in range(len(new_matrix_as_2d_list[0])):
     for row_index, row in enumerate(new_matrix_as_2d_list):
         char = new_matrix_as_2d_list[row_index][i]
         if char.isalpha():
-            temp_str = f'{temp_str}{char}'
+            # temp_str = f'{temp_str}{char}'
+            temp_str += char
 print(temp_str)
 
 
