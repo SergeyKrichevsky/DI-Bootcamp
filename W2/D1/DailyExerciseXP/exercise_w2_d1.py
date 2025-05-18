@@ -1,93 +1,93 @@
-# #EX1
+#EX1
 
-# class Cat:
-#     def __init__(self, cat_name, cat_age):
-#         self.name = cat_name
-#         self.age = cat_age
+class Cat:
+    def __init__(self, cat_name, cat_age):
+        self.name = cat_name
+        self.age = cat_age
 
-# # Step 1: Create cat objects
-# # cat1 = create the object
+# Step 1: Create cat objects
+# cat1 = create the object
 
-# cat1 = Cat('Kitty', 1)
-# cat2 = Cat('Ricky', 2)
-# cat3 = Cat('Sperviser', 5)
-# # print(cat1, cat2)
-# # print(cat1.__dict__)
-# # print(cat2.__dict__)
-# # print(cat3.__dict__)
-# # print(cat1.__dict__, cat2.__dict__)
+cat1 = Cat('Kitty', 1)
+cat2 = Cat('Ricky', 2)
+cat3 = Cat('Sperviser', 5)
+# print(cat1, cat2)
+# print(cat1.__dict__)
+# print(cat2.__dict__)
+# print(cat3.__dict__)
+# print(cat1.__dict__, cat2.__dict__)
 
 
-# # Step 2: Create a function to find the oldest cat
+# Step 2: Create a function to find the oldest cat
+
+def find_oldest_cat(cat1, cat2, cat3):
+     return max([cat1, cat2, cat3], key=lambda cat: cat.age)
+
+# print(find_oldest_cat(cat1, cat2, cat3).__dict__)
 
 # def find_oldest_cat(cat1, cat2, cat3):
-#      return max([cat1, cat2, cat3], key=lambda cat: cat.age)
+    # ... code to find and return the oldest cat ...
 
-# # print(find_oldest_cat(cat1, cat2, cat3).__dict__)
+# Step 3: Print the oldest cat's details
 
-# # def find_oldest_cat(cat1, cat2, cat3):
-#     # ... code to find and return the oldest cat ...
-
-# # Step 3: Print the oldest cat's details
-
-# oldest_cat = find_oldest_cat(cat1, cat2, cat3)
-# print(f'The oldest cat is {oldest_cat.name}, and is {oldest_cat.age} years old.')
-# # print(f'The oldest cat is {find_oldest_cat(cat1, cat2, cat3).name}, and is {find_oldest_cat(cat1, cat2, cat3).age} years old.')
+oldest_cat = find_oldest_cat(cat1, cat2, cat3)
+print(f'The oldest cat is {oldest_cat.name}, and is {oldest_cat.age} years old.')
+# print(f'The oldest cat is {find_oldest_cat(cat1, cat2, cat3).name}, and is {find_oldest_cat(cat1, cat2, cat3).age} years old.')
 
 
 
-# #EX2
-# # Create a Dog class with methods for barking and jumping. Instantiate dog objects, call their methods, and compare their sizes.
+#EX2
+# Create a Dog class with methods for barking and jumping. Instantiate dog objects, call their methods, and compare their sizes.
 
-# # Step 1: Create the Dog Class
-# # Create a class called Dog.
-# # In the __init__ method, take name and height as parameters and create corresponding attributes.
-# # Create a bark() method that prints “ goes woof!”.
-# # Create a jump() method that prints “ jumps cm high!”, where x is height * 2.
+# Step 1: Create the Dog Class
+# Create a class called Dog.
+# In the __init__ method, take name and height as parameters and create corresponding attributes.
+# Create a bark() method that prints “ goes woof!”.
+# Create a jump() method that prints “ jumps cm high!”, where x is height * 2.
 
 
-# class Dog:
-#     def __init__(self, dog_name, dog_height):
-#         self.name = dog_name
-#         self.height = dog_height
+class Dog:
+    def __init__(self, dog_name, dog_height):
+        self.name = dog_name
+        self.height = dog_height
 
-#     def bark(self):
-#         print(f'{self.name} goes woof!')
+    def bark(self):
+        print(f'{self.name} goes woof!')
     
-#     def jump(self):
-#         print(f'{self.name} jumps {self.height * 2} cm high')
+    def jump(self):
+        print(f'{self.name} jumps {self.height * 2} cm high')
         
 
-# # Step 2: Create Dog Objects
-# # Create davids_dog and sarahs_dog objects with their respective names and heights.
+# Step 2: Create Dog Objects
+# Create davids_dog and sarahs_dog objects with their respective names and heights.
 
-# davids_dog = Dog('David`s Dog', 20)
-# sarahs_dog = Dog('Sarah`s Doggy', 10)
-# # print(davids_dog)
-# # print(sarahs_dog)
+davids_dog = Dog('David`s Dog', 20)
+sarahs_dog = Dog('Sarah`s Doggy', 10)
+# print(davids_dog)
+# print(sarahs_dog)
 
 
-# # Step 3: Print Dog Details and Call Methods
-# # Print the name and height of each dog.
-# # Call the bark() and jump() methods for each dog.
+# Step 3: Print Dog Details and Call Methods
+# Print the name and height of each dog.
+# Call the bark() and jump() methods for each dog.
 
-# print(f'{davids_dog.name} height is {davids_dog.height} cm high')
-# print(f'{sarahs_dog.name} height is {sarahs_dog.height} cm high')
+print(f'{davids_dog.name} height is {davids_dog.height} cm high')
+print(f'{sarahs_dog.name} height is {sarahs_dog.height} cm high')
 
-# davids_dog.bark()
-# davids_dog.jump()
-# sarahs_dog.bark()
-# sarahs_dog.jump()
+davids_dog.bark()
+davids_dog.jump()
+sarahs_dog.bark()
+sarahs_dog.jump()
 
-# # Step 4: Compare Dog Sizes
+# Step 4: Compare Dog Sizes
 
-# def compare_dog_size (dog1, dog2):
-#     if dog1.height > dog2.height:
-#         return f'{dog1.name} is {dog1.height - dog2.height} cm taller than {dog2.name}'
-#     if dog2.height > dog1.height:
-#         return f'{dog2.name} is {dog2.height - dog1.height} cm taller than {dog1.name}'
+def compare_dog_size (dog1, dog2):
+    if dog1.height > dog2.height:
+        return f'{dog1.name} is {dog1.height - dog2.height} cm taller than {dog2.name}'
+    if dog2.height > dog1.height:
+        return f'{dog2.name} is {dog2.height - dog1.height} cm taller than {dog1.name}'
     
-# print(compare_dog_size(davids_dog, sarahs_dog))
+print(compare_dog_size(davids_dog, sarahs_dog))
 
 
 
