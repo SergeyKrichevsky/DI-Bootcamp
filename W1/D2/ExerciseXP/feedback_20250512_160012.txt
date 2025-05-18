@@ -1,0 +1,14 @@
+URL: https://github.com/SergeyKrichevsky/DI-Bootcamp/blob/main/W1/D2/ExerciseXP/ExerciseXP_w1_d2.py
+suggestions for improvement:
+- In Exercise 1, using `update()` with a list is slightly less efficient than adding elements one by one using `add()`.  Consider using `add()` for single elements and `update()` for multiple elements from an iterable. For improved readability, you can also use f-strings for better output formatting (e.g., print(f"my fav numbers Set: {my_fav_numbers}")).
+- Exercise 2: The solution cleverly bypasses tuple immutability by converting to a list, modifying, and converting back. While functional, this is a workaround;  the exercise intends to highlight the immutability concept directly.
+- Exercise 5:  The second part of Exercise 5 (printing even-indexed elements) can be made more concise and efficient using `enumerate()` for both iterating over the list and directly accessing the index.
+- Exercise 8: The initial check `if user_input.lower() != 'quit'` before the while loop is redundant, since the condition is already checked in the `while` loop itself.
+- Exercise 9: The program correctly handles the ticket pricing logic and the bonus part. However, the bonus section could benefit from improved error handling in case of invalid age inputs.
+- In several exercises (especially 7, 8, 9), input validation is missing. The code assumes the user always inputs valid data; incorporate input validation checks to make it robust.
+Brief justification:
+- correctness: The code successfully addresses the core logic of almost all exercises.  The small inaccuracies are in the less efficient approach or the bypass of the core concept (ex2).  The code largely aligns with the instructions in the Chapter Content/Questions, but some parts could be more efficient or elegant.
+- readability: The code is generally readable, but some improvements could enhance clarity.  Consistent variable naming and better use of whitespace would improve readability. The addition of comments explaining certain steps would also be beneficial.
+- performance: The code generally performs well, but in a couple of instances, there are opportunities to improve performance. The approach to exercise 2 could be improved.  Otherwise, the performance is acceptable for the given tasks.
+- security: The code is secure because there are no vulnerabilities related to user input or other external factors that could result in security risks.
+
