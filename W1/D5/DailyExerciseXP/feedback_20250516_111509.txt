@@ -1,0 +1,15 @@
+URL: https://github.com/SergeyKrichevsky/DI-Bootcamp/blob/main/W1/D5/DailyExerciseXP/exercise_w1_d5.py
+suggestions for improvement:
+- Improve the `check_win` function to be more concise and efficient.  The current implementation is repetitive. Consider using loops or list comprehensions to reduce redundancy.
+- Add more robust input validation in `get_valid_input` to handle non-numeric input more gracefully. Currently, it only checks for digits, but doesn't handle other invalid characters.
+- Separate the player name input from the `player_input` function to improve code organization. The player's name should be obtained only once, during game initialization.
+- The `board_adress` function is redundant and unnecessary since `board_adress_indexes` provides the necessary row and column indices.
+- Add a function to initialize players (names and symbols) to the game, rather than having separate lines of code.
+- Consider using a more visually appealing board display. For example, using lines to separate cells would make the board look cleaner.
+- Add comments to explain the purpose of different sections of the code, especially the game logic.
+Brief justification:
+- correctness: The code implements a functional Tic-Tac-Toe game. It correctly handles player input, updates the board, checks for win conditions, and detects ties.  However, the `check_win` function could be improved for efficiency.  The input validation isn't as robust as it could be. Minor aspects of the instructions (visually appealing board) are not fully met.  The overall functionality aligns very well with the chapter's instructions, but there's room for improvement in efficiency and code style.
+- readability: The code is generally readable but could be improved with better code organization.  The `check_win` function is particularly lengthy and repetitive. More descriptive variable names and comments would also increase readability. The excessive use of print statements for error handling, instead of a function, detracts from the readability.
+- performance: The performance is acceptable for a small game like Tic-Tac-Toe.  However, the repetitive nature of `check_win` impacts performance, especially as the board size increases. The use of unnecessary functions also lowers performance. Optimizing `check_win` would significantly improve performance.
+- security: The code doesn't have any obvious security vulnerabilities.  It's a simple game with no external input or data handling that could introduce security risks.
+
