@@ -1,0 +1,11 @@
+URL: https://github.com/SergeyKrichevsky/DI-Bootcamp/blob/main/W1/D5/DailyChallenge/daily_challenge_w1_d5.py
+suggestions for improvement:
+- Challenge 1: The code for Challenge 1 perfectly fulfills the requirements.  It accurately takes comma-separated input, sorts it alphabetically, and outputs the sorted list in the same format. No improvements needed here.
+- Challenge 2: The `longest_word` function in Challenge 2 has a flaw. It splits the sentence by spaces (' '), but the instructions specify that characters like commas and periods should be considered part of the word.  Therefore, it does not correctly identify the longest word when punctuation is present within the word.  Modify the splitting mechanism to account for this.
+- Challenge 2: Add more comprehensive docstrings to the function, clearly outlining parameters, return values, and exceptions.
+Brief justification:
+- correctness: Challenge 1's code perfectly matches the instructions. It addresses input, splitting, sorting, joining, and output as described.  Challenge 2's code is partially correct; it works for sentences without punctuation within words but fails when words contain commas or periods, deviating from the requirement to consider these as part of the word. Therefore 90% correctness is awarded.
+- readability: The code is well-structured and easy to follow. Variable names are descriptive, and the logic is straightforward. The comments are helpful. The docstring in Challenge 2 could be more descriptive, but overall, readability is high.
+- performance: The code is efficient. The sorting algorithm used is likely efficient, and the string operations are simple. The time complexity is linear for both challenges.
+- security: There are no security concerns in the provided code.  The code only deals with user input and string manipulation, without any external resources or file handling that might introduce security vulnerabilities.
+
