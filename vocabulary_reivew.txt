@@ -1,0 +1,44 @@
+w1 - Python basics
+
+variables
+declare a variable
+
+Basic data types
+strings
+number: int, float
+booleans
+
+Sequamces:
+strings
+range
+lists
+tupples
+sets
+
+Collections:
+liststupples
+sets
+dictionaries
+
+Functions:
+global scope and local scope 
+arguments: positional arguments {(position1, position2)},
+  keyword arguments, default arguments, *agrs, **kwargs.
+{keyword arguments: def function(name = 'Sergey', language = 'EN')}
+def sey_hello (language, name):
+   if language == 'EN':
+      print(f'Hello {name}')
+      
+"call the function": triggering a function by writing its name
+methods: are functions than are part of a class scope
+
+w2
+
+OOP - Object Oriented Programming
+class: blueprint to creating objects
+objects: ab instanse of a ckass
+{cat_1 = Cat('name', age')} (the arguments here are atributes of f Cat)
+methods: functions related to a sertain class
+
+
+

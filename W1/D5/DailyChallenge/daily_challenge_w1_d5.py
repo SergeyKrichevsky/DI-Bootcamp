@@ -10,7 +10,8 @@
 # Use the input() function to get a string of words from the user.
 # The words will be separated by commas.
 
-user_input = input('Write a string of words, seperated by coma')
+user_input = "Forgetfulness is by all means powerless!"
+# user_input = input('Write a string of words, seperated by coma ')
 
 # Step 2: Split the String
 
@@ -64,7 +65,8 @@ def longest_word (string):
 # ==> Testing Variants:
 # print(longest_word("Margaret's toy is a pretty doll."))
 # print(longest_word("A thing of beauty is a joy forever."))
-# print(longest_word("Forgetfulness is by all means powerless!"))
+print(longest_word("Forgetfulness is by all means powerless!"))
+print(longest_word("Forgetfulness is by all means powerless! Long.,word,.,....,,,.,.,.,.,."))
 
 # Expected Output:
 # longest_word("Margaret's toy is a pretty doll.") should return "Margaret's".
