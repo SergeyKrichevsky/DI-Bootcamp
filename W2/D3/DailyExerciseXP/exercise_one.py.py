@@ -1,5 +1,3 @@
-
-
 class Currency:
     def __init__(self, currency, amount):
         self.currency = currency
@@ -168,3 +166,4 @@ fake_users_generator(6)
 
 for user in users_list:
     print(user)
+
