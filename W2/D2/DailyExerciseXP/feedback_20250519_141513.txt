@@ -1,0 +1,17 @@
+URL: URL: https://github.com/SergeyKrichevsky/DI-Bootcamp/blob/main/W2/D2/DailyExerciseXP/exercise_w2_d2_part1.py
+suggestions for improvement:
+- Exercise 1: The Siamese class is correctly implemented, inheriting from the Cat class. However, it lacks additional attributes or methods as suggested in the instructions.  Adding a unique trait, for example, a specific vocalization method, would enhance the exercise.
+- Exercise 1: The example code and instructions could be clearer regarding how to instantiate the Bengal and Chartreux objects before adding them to the list.  Explicitly showing this instantiation would make the instructions more user-friendly.
+- Exercise 2: The Dog class is well-implemented and meets all requirements. The fight method correctly determines the winner based on the calculated values.
+- Exercise 3: This exercise is not implemented in the provided code.  The instructions indicate that it should import the Dog class from the previous exercise and create a PetDog class with added functionality.
+- Exercise 4: This exercise is not implemented in the provided code.  The instructions specify creating a Person class and a Family class with several methods for managing family members and checking age-related conditions.
+Correctness: 85%
+-----
+URL: URL: https://github.com/SergeyKrichevsky/DI-Bootcamp/blob/main/W2/D2/DailyExerciseXP/exercise_w2_d2_part2.py
+suggestions for improvement:
+- In `PetDog.play`, the code iterates through `args` to collect dog names, which is correct according to the instructions. However, using `*args` directly within an f-string to join the names might lead to unexpected behaviour if non-Dog objects were accidentally passed as arguments. Consider improving error handling or explicitly type-checking the `args`.
+- In `Dog.fight`, the return statement is correct in handling cases with equal speeds, however, calculating the speed for the fight inside the `fight` method is less efficient as the speed can be cached. Revise the method to avoid redundant calculation of the speed each time the fight method is called. For example, introduce a new variable that can hold the result of the method `run_speed` and call the method only once.
+- Add docstrings to the `Dog` class methods to explain their purpose and parameters.
+- In Exercise 4, the `Family` class lacks error handling.  Consider adding checks to prevent duplicate first names within the family (or handle them appropriately) and to prevent adding invalid data types to `members`.
+Correctness: 95%
+-----
