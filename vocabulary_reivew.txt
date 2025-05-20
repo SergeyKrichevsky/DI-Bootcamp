@@ -40,5 +40,27 @@ objects: ab instanse of a ckass
 {cat_1 = Cat('name', age')} (the arguments here are atributes of f Cat)
 methods: functions related to a sertain class
 
+Inheritance: a class can inherit attributes and methods from another class.
+They are called "parent" and "child"
+
+Multiple Inheritanci: a class can inherit from more then one other class (two or more Parants)
+seper(): initiats attributes from the parent class
+
+Polymorphism: we use a method wiht the same name in multiple classes with relationship
+
+try and except block: halpful for data validation and avoid internal errors and avoid to crush the cod.
+
+Decorators:
+@static method: a method that does`nt need self or class
+@class,ethod: a method that can be called on the class (before creating the obj)
+@property: a methid that behavior like an attribute (you access the outpop of this method with dot notation"obj1.age")
+
+Dunder methods: D for "double" "under" fjr underline. They are also called "magic methods
+__ini__(self)
+__str__(self)
+__repr__(self)
+__lt__(self)
+__eq__(self)
 
 
+they are rtiggered automaticly or with math and comparison strings
