@@ -1,0 +1,13 @@
+URL: https://github.com/SergeyKrichevsky/DI-Bootcamp/blob/main/W2/D4/DailyChallenge/DailyChallenge_w2_d4.py
+suggestions for improvement:
+- The `word_frequency` method could be improved by using the `count()` method for better performance.  Currently, it iterates through the list of words unnecessarily.
+- The `most_common_word` method is inefficient because it calls `word_frequency` repeatedly. It could be optimized by counting word frequencies directly within the loop.
+- Error handling for file operations in `from_file` is minimal. Consider adding `try-except` blocks to handle `FileNotFoundError` and other potential exceptions.
+- The stop word list is hardcoded. Consider loading it from a file or using a well-maintained library for a more robust solution.
+- Add docstrings to the `TextModification` class methods for better readability and understanding.
+Brief justification:
+- correctness: The code implements all required classes and methods as specified in the instructions.  The functionality of each method aligns with the descriptions (e.g., `word_frequency` counts word occurrences, `most_common_word` finds the most frequent, etc.). The `from_file` class method correctly reads text from a file and creates a `Text` object.  The `TextModification` class correctly inherits from `Text` and implements the text cleaning methods.  The small deduction is due to the lack of error handling in the file reading method.
+- readability: The code is generally well-structured and easy to follow.  Variable names are descriptive. However, some methods could benefit from more concise and efficient implementation, improving readability. The lack of detailed docstrings in `TextModification` slightly reduces readability.
+- performance: The performance of the `word_frequency` and `most_common_word` methods could be significantly improved with more efficient algorithms, as explained above. Currently, these methods have unnecessary iterations which impact performance. The use of regular expressions in `remove_special_characters` is generally efficient but might be slower for very large texts compared to more optimized string operations.
+- security: The code doesn't have any obvious security vulnerabilities. The file handling in `from_file` opens the file in read mode only, preventing unauthorized modification. The use of regular expressions is handled appropriately and doesn't create any security issues.
+
