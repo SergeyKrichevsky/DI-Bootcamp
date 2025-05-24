@@ -1,0 +1,19 @@
+URL: URL: https://github.com/SergeyKrichevsky/DI-Bootcamp/blob/main/W2/D5/mini_project_2_w2_d5/game.py
+suggestions for improvement:
+- The `rock-paper-scissors.py` file is missing, which is a crucial part of the project as outlined in the instructions.  This file should handle the menu, score tracking, and overall game loop.
+- Error handling in `valid_input` could be improved. While it handles `ValueError`, it doesn't explicitly handle cases where the user inputs non-numeric data. Consider using a `try-except` block to catch `TypeError` as well.
+- The use of numerical keys (1, 2, 3) for rock, paper, scissors in `game_items` is acceptable, but using string keys might improve readability. Consider this trade-off, in this specific case, numbers make it more concise.
+- Add more informative messages to the user in the game loop (e.g., display current score).
+- The `print_results` function and score tracking are entirely missing.  The chapter explicitly mentions this functionality.
+Correctness: 90%
+-----
+URL: URL: https://github.com/SergeyKrichevsky/DI-Bootcamp/blob/main/W2/D5/mini_project_2_w2_d5/rock-paper-scissors.py
+suggestions for improvement:
+- The `game.py` file (which is referenced but not provided) is crucial for a complete evaluation.  The provided code only covers the menu and results handling in `rock-paper-scissors.py`.  Without `game.py`, a complete correctness assessment is impossible.
+- Improve error handling in `get_user_menu_choice` to provide more specific error messages (e.g., 'Invalid choice. Please enter 1, 2, or 3.').
+- Add more robust input validation in `get_user_menu_choice`. Currently, it only checks if the input is an integer within the range, but doesn't handle non-numeric input gracefully.
+- Consider using a more descriptive variable name than `results` (e.g., `game_results` or `score_summary`).
+- The `print_results` function could be improved by adding a more engaging message instead of just printing the results.
+- The main function could be improved with a clear separation of concerns for better readability. Consider refactoring it into smaller, more focused functions.
+Correctness: 85%
+-----
