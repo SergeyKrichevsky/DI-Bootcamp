@@ -1,0 +1,8 @@
+URL: URL: https://github.com/SergeyKrichevsky/DI-Bootcamp/blob/main/W2/D5/DailyChallenge/daily_challenge_w2_d2.py
+suggestions for improvement:
+- The `deal` method uses `random.randint` to select a card, which is inefficient for dealing cards sequentially.  A better approach would be to use `pop()` to remove cards from the beginning or end of the deck.
+- The `Card` class is missing, as specified in the instructions. The code only creates cards implicitly within the `Deck` class.
+- Error handling should be added to the `deal` method to handle the case where the deck is empty.
+- Consider using a more descriptive name for the `value` attribute (e.g., `ranks`).
+Correctness: 85%
+-----
