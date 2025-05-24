@@ -1,0 +1,17 @@
+URL: URL: https://github.com/SergeyKrichevsky/DI-Bootcamp/blob/main/W2/D5/mini_project_1_w2_d5/anagram_checker.py
+suggestions for improvement:
+- The `get_anagrams` method should return an empty list instead of the string 'No anagrams found' when no anagrams are found. This aligns better with the instructions to return a list.
+- The `AnagramChecker` class should handle potential exceptions (like `FileNotFoundError`) during file loading in the `__init__` method.
+- The performance of `get_anagrams` could be improved by using more efficient algorithms.  Currently, it iterates through the entire word list for every anagram search.
+- Add input validation to `get_anagrams` to handle non-string inputs or empty strings gracefully.
+Correctness: 85%
+-----
+URL: URL: https://github.com/SergeyKrichevsky/DI-Bootcamp/blob/main/W2/D5/mini_project_1_w2_d5/anagrams.py
+suggestions for improvement:
+- The `AnagramChecker` class is not fully implemented in the provided code snippet.  The code only shows the UI interaction and input validation, but the core logic of the `AnagramChecker` class (loading the word list, checking word validity, and finding anagrams) is missing.
+- The program does not handle the case where a valid word has no anagrams. It should gracefully handle this scenario, for example, by stating 'No anagrams found'.
+- Error handling could be improved. Instead of simply printing error messages, consider using exceptions for more robust error management.
+- The `valid_input` function could be made more concise.  For example, chaining conditions could streamline the logic.
+- The performance can be improved by optimizing the anagram search algorithm.  Currently, it likely uses a brute-force approach, which is inefficient for larger word lists. Consider using more efficient algorithms such as sorting characters and comparing.
+Correctness: 90%
+-----
