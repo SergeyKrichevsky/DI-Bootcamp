@@ -1,0 +1,26 @@
+URL: URL: https://github.com/SergeyKrichevsky/DI-Bootcamp/blob/main/W2/D4/DailyExerciseXP/exercise_w2_d4.py
+suggestions for improvement:
+- The program doesn't handle the case where the word list file is not found.  Add a `try-except` block to handle `FileNotFoundError`. 
+- The `get_words_from_file` function should ideally check if the file is empty and handle that case gracefully.  An empty file would lead to an error in `get_random_sentence`.
+- Improve error messages to be more user-friendly (e.g., specify the correct input format more clearly).
+- Exercise 2 (JSON manipulation) is missing entirely.
+- Add docstrings to the `main` function, explaining its purpose, parameters, and return value.
+- Consider using a more descriptive variable name than `file_name` (e.g., `word_list_filename`).
+Correctness: 85%
+-----
+URL: URL: https://github.com/SergeyKrichevsky/DI-Bootcamp/blob/main/W2/D4/DailyExerciseXP/exercise_w2_d4_n2.py
+suggestions for improvement:
+- The code for Exercise 1 (random sentence generator) is missing entirely.
+- The date 'YYYY-MM-DD' is initially assigned to 'birth_date' before being replaced by '1990-05-15'.  This is redundant and could be simplified.
+- Add error handling (try-except blocks) around file operations in Exercise 2 to gracefully handle potential exceptions like `FileNotFoundError` or `IOError`.
+- The program should explicitly handle cases where the file 'words.zip' might not exist or might be corrupt in Exercise 1.
+Correctness: 90%
+-----
+URL: URL: https://github.com/SergeyKrichevsky/DI-Bootcamp/blob/main/W2/D4/DailyExerciseXP/sampleJson.json
+suggestions for improvement:
+- The provided code snippet only addresses Exercise 2.  It's missing the implementation for Exercise 1 (Random Sentence Generator).
+- The code lacks error handling (e.g., `try-except` blocks) for file operations and user input validation (as specified in Exercise 1).
+- Exercise 2 should include explicit file I/O operations to read the JSON string, modify it and then save it to a file. The provided code snippet shows only the in-memory manipulation of a JSON object.
+- The date format in the birth_date field should be specified more explicitly within the code, rather than a placeholder.
+Correctness: 80%
+-----

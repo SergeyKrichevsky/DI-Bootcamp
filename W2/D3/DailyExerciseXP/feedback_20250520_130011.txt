@@ -1,0 +1,13 @@
+URL: URL: https://github.com/SergeyKrichevsky/DI-Bootcamp/blob/main/W2/D3/DailyExerciseXP/exercise_one.py.py
+suggestions for improvement:
+- In the `Currency` class's `__str__` method, it should be "dollars" instead of "dollar" if the currency is "dollar" and similarly for other currencies.  The current implementation doesn't handle pluralization correctly. Add logic to handle pluralization of the currency label based on the amount (e.g., '1 dollar', '5 dollars').
+- The `__repr__` method should ideally return a string that can be used to recreate the object (similar to what you'd see with `repr()` on built-in types). It currently mirrors `__str__` but could be improved for debugging and object reconstruction purposes.
+- In Exercise 3, the random string generation could be simplified using `random.choices` for better readability.  It currently uses a loop and concatenation, which is less concise.
+- In Exercise 7, the code creates a global variable `users_list`. It is better practice to return the list from the function, making the function self-contained and improving code organization.
+Correctness: 90%
+-----
+URL: URL: https://github.com/SergeyKrichevsky/DI-Bootcamp/blob/main/W2/D3/DailyExerciseXP/func.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----

@@ -1,0 +1,15 @@
+URL: https://github.com/SergeyKrichevsky/DI-Bootcamp/blob/main/W1/D3/DailyExerciseXP/exercise_w1_d3.py
+suggestions for improvement:
+- In Exercise 1, using a dictionary comprehension would be more concise and Pythonic than a for loop.
+- In Exercise 2, the bonus part could be improved by validating user input more robustly (e.g., ensuring only numbers are entered for age).
+- In Exercise 3, the `major_color` dictionary's structure is inconsistent (sometimes a string, sometimes a list). Consider standardizing it to a list of strings for better consistency.
+- In Exercise 4, using `enumerate` for the first two dictionaries is slightly more efficient and readable than the existing approach with `index()`.
+- Add comments to explain complex logic or non-obvious code sections in each exercise. Improve variable names for better understanding (e.g.  `ticket_price_infant` to `infant_ticket_price` )
+- In Exercise 4, using the `list.index()` method can be slow for large lists. For better performance in such scenarios, consider using a dictionary to map characters to indices.
+- Consider adding error handling (try-except blocks) where appropriate, especially when dealing with user input to prevent unexpected crashes. 
+Brief justification:
+- correctness: The code correctly implements the core logic of each exercise.  Exercise 1 accurately converts lists to dictionaries. Exercise 2 calculates ticket costs correctly. Exercise 3 modifies and accesses the dictionary as specified. Exercise 4 creates the three dictionaries with the correct mappings. Minor inconsistencies in data structuring and some inefficiencies are noted but don't prevent the code from fulfilling the overall functionality described in the chapter content.
+- readability: The code is generally readable, but some improvements can be made.  Variable names could be more descriptive in a few places.  Using dictionary comprehensions in some cases would enhance readability and conciseness. The bonus part of Exercise 2 is well-structured.
+- performance: The code's performance is mostly good.  In Exercise 4, using `list.index()` repeatedly can be inefficient for very large lists.  The use of `enumerate` is a good optimization in certain parts, but overall performance is good for the problem size presented in the exercises. 
+- security: The code does not have any obvious security vulnerabilities. The bonus part of Exercise 2 incorporates input validation, which is a positive aspect regarding security, preventing crashes due to incorrect user input.
+

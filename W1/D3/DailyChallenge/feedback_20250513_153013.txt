@@ -1,0 +1,12 @@
+URL: https://github.com/SergeyKrichevsky/DI-Bootcamp/blob/main/W1/D3/DailyChallenge/daily_challenge_w1_d3.py
+suggestions for improvement:
+- In Challenge 1, add input validation to handle non-alphabetic characters in the user's input.  Currently, it processes any input without error handling.
+- In Challenge 2, the `re.sub(r'\D', '', value)` approach to cleaning prices is effective but could be made more robust by handling potential exceptions (e.g., if a price is not properly formatted). Consider adding a `try-except` block.
+- Challenge 2 could benefit from a more descriptive variable name than `affordable_list`. Something like `affordable_items` would improve readability.
+- For better readability and maintainability, separate the price cleaning logic (in Challenge 2) into a dedicated function. This improves code organization and reusability.
+Brief justification:
+- correctness: Challenge 1's code accurately creates the letter index dictionary as specified, handling both single and repeated letters.  Challenge 2 correctly processes the provided dictionary, cleans the price strings, compares them to the wallet amount, and outputs the sorted list of affordable items or 'Nothing' as required. The edge cases are also handled correctly. There's a minor correctness reduction because of the lack of input validation in Challenge 1.
+- readability: The code is generally well-structured and easy to follow. However, more descriptive variable names (especially in Challenge 2) and the extraction of the price cleaning into a function would enhance readability. The comments could be more precise and informative.
+- performance: The algorithms used are efficient for the given task. The time complexity is linear for both challenges. The use of `enumerate` and the direct dictionary manipulation in Challenge 1, and the efficient string cleaning in Challenge 2 are good performance practices. A small performance reduction is due to the lack of error handling (which might lead to slower execution or crashes in some situations).
+- security: The code doesn't directly deal with user input that might pose security risks (such as code injection). The code is safe in the context of the given tasks, dealing only with string manipulation and numerical comparisons. The use of regular expressions is secure as long as it's done against well-defined and controlled inputs, which is the case in this scenario.
+
